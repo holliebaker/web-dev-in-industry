@@ -1,0 +1,196 @@
+/* @theme bsu-computer-science */
+
+@import 'default';
+
+:root {
+    --colour-bsu: #394455;
+    --colour-1: #42587a;
+    --colour-bg: #ced9ea;
+    --colour-bg-alt: #c7d6ed;
+    --colour-bg-2: #a7b8d1;
+    --colour-2: #7a4258;
+    --colour-3: #587a42;
+}
+
+section.titlepage {
+    text-align: center;
+
+    background-color: var(--colour-1);
+opacity: 0.9;
+         background-image: repeating-radial-gradient( circle at 0 0, transparent 0, var(--colour-1) 30px ),
+             repeating-linear-gradient( black, var(--colour-bsu) );
+
+color: white !important;
+}
+
+section.titlepage h1,
+    section.titlepage h2,
+    section.titlepage h3 {
+color: white;
+       font-weight: lighter;
+    }
+
+section.titlepage h1 {
+    font-size: 3rem;
+}
+
+section.titlepage h2 {
+    font-size: 2rem;
+}
+
+section.titlepage.invert {
+    background-color: var(--colour-bg);
+opacity: 0.9;
+         background-image: repeating-radial-gradient( circle at 0 0, transparent 0, white 30px ),
+             repeating-linear-gradient( var(--colour-bg-alt), var(--colour-bg) );
+
+color: black !important;
+}
+
+section.titlepage.invert h1,
+    section.titlepage.invert h2,
+    section.titlepage.invert h2 {
+color: var(--colour-2);
+    }
+
+h1 {
+    margin-top: 20px;
+    font-weight: lighter;
+    font-size: 2em;
+color: var(--colour-1);
+}
+
+h2 {
+    font-weight: lighter;
+    font-size: 1.5em;
+color: var(--colour-2);
+}
+
+em {
+    fond-weight: bold; color: var(--colour-3);
+}
+
+img[src*='#logo']{
+position: absolute;
+bottom: 20px;
+right: 20px;
+width: 15%;
+}
+
+section.two-col {
+columns: 2;
+}
+
+section.two-col h1 {
+    column-span: all;
+}
+
+section.two-col br {
+    break-before: column;
+}
+
+section.image >:not(:has(img)) {
+    max-width: min(720px, 100%);
+}
+
+section.image img{
+display: block;
+margin: auto;
+}
+
+.story {
+display: block;
+padding: 1rem;
+background: var(--colour-bg);
+            box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+section.postits {
+margin: 20px auto;
+        font-family: 'Lato';
+color:#fff;
+}
+
+section.postits *{
+margin:0;
+padding:0;
+}
+
+soction.postits ul, section.postits li{
+    list-style:none;
+}
+
+section.postits ul {
+display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+}
+
+section.postits ul li {
+margin:1em;
+background:#ffc;
+display:block;
+color:black;
+height:6em;
+width:6em;
+padding:0.5em;
+        box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+}
+
+soction.postits ul li:nth-child(even) {
+transform:rotate(4deg);
+position:relative;
+top:5px;
+}
+
+section.postits ul li:nth-child(3n) {
+transform:rotate(-3deg);
+position:relative;
+top:-5px;
+}
+
+section.postits ul li:nth-child(5n) {
+transform:rotate(5deg);
+position:relative;
+top:-10px;
+}
+
+.dev-stages {
+margin: 1em auto;
+width:100%;
+display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+.dev-stages > div {
+    text-align:center;
+display:block;
+padding: 0.5em;
+}
+
+.dev-stages__plan {
+    background-color: blue;
+width: 15%;
+}
+
+.dev-stages__code {
+    background-color: yellow;
+width: 10%;
+}
+
+.dev-stages__review {
+    background-color: green;
+width: 25%;
+}
+
+.dev-stages__test {
+    background-color: orange;
+width: 35%;
+}
+
+.dev-stages__release {
+    background-color: red;
+width: 10%;
+}
+
