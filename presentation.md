@@ -74,18 +74,17 @@ theme: bsu-computer-science
 
 <!-- _class: image -->
 
-![w:950 Rope swing software engineering diagram](./swing.jpg)
+![w:950 Tree swing software engineering cartoon](./swing.webp)
 
 <!--
   Famous cartoon about software engineering.
   It's important to gather the requirements and understand what the user needs. Often asking the user what they want isn't very effective because they may not know. (1-3)
   Sometimes there are technical limitations -- the client has been sold something which isn't possible and a compromise has te be reached. (3)
   Not much to say about (4), we've all coded here!
-  It's important to get feedback early, iterate and be able to adapt to users' needs, but it's a balance of when / how often, and how much we are willing / able to change. i
-  It is also important to manage customers' expectations. (6 and 9)
-  User and developer documentation is important (7). Have you ever returned to late night code the next day and have no idea what it does?
-  Web systems are different from standalone software. Browserv are updated, libraries / features become deprecated, vulnerabilities are discovered and exploited.
-  (12) and sometimes the customer just wanted a simple tyre swing!
+  It is also important to manage customers' expectations. (5 and 8)
+  User and developer documentation is important (6). Have you ever returned to late night code the next day and have no idea what it does?
+  Web systems are different from standalone software. Browserv are updated, libraries / features become deprecated, vulnerabilities are discovered and exploited. 9
+  (10) and sometimes the customer just wanted a simple tyre swing!
 -->
 
 ---
@@ -322,52 +321,71 @@ theme: bsu-computer-science
 
 The customer has requested that patients have the ability to book their own appointments online. It should work as follows:
 
-- Send SMS to the patient.
+- Therapist sends an SMS to the patient with a booking link.
 
-- Display available appointments to the patient.
+- Patient clicks the link and is shown a web page with available appointments (date, time, location).
 
-- Allow them to choose an appointment.
+- The patient can select one appointment and will be presented with a confirmation screen.
 
-- Display a confirmation screen showing date, time and location.
-
----
-
-<div class="story">
-<h3>Patient Appointment Booking page (3 points)</h3>
-
-<p>As a patient</p>
-<p>I want to book appointments online</p>
-<p>So that I can easily see all available appointments and book tham independently at a time of my choice.</p>
-
-<ul>
-<li>Patient should be presented with a single webpage showing available appointments.</li>
-<li>Appointment date, time and location should be shown.</li>
-<li>User should be able to select an appointment; their selection should be clearly indicated.</li>
-<li>User should be able to confirm their selection.</li>
-</ul>
+- Once booking is successful, the appointment is added to the Therapist's diary and an appointment conficmation SMS is sent to the patient.
 
 ---
 
-# The system should
+# The Patient Portal should
 
-- Be straightforward to use.
-- Be accessible to all users.
+- Be a separate system from the main Patient Management System (but may need to communicate with it).
+
+- Be simple to use, so that patients are not overwhelmed or discouraged from using it.
+
+- Be accessible to all users (think colours, screenreaders, but also the fonts and language used).
+
 - Work on multiple screen sizes (research shows users prefer to complete bookings and purchases on a PC, even if they started on their phone).
-- Follow the client's house style and colour scheme.
 
 ---
 
 # Your Task
 
-In groups, pairs or individually.
+In groups, pairs or individually, plan out the Patient Portal.
 
-- **Plan your work** - break the requirements into smaller tasks.
+- **Flow-chart**: create a flow-chart showing how the system will work and how the Patient Portal will interact with the main Patient Management System.
 
-- **Create the page** - design and then create the appointment booking page according to the requirements on the story using HTML, CSS and JavaScript.
+- **Write User Stories**
 
-- **Code review and test** - ask a friend to look through and comment on your work. Test it in your browser. Don't forget to change the screen size!
+  - Use the template *"As a ..., I want ..., So that ..., Requirements"* to specify requirements.
+  - Think about dependencies *(e.g., confirmation page depends on booking page)*.
+  - Thnk about priorities *(e.g., allowing the client to customise the style of their page is less important than getting the system working)*.
+
 
 At the end of the session, please showcase your work!
+---
+
+<div class="story">
+<h3>Patient Appointment Booking: SMS (2 points)</h3>
+
+<p>As a therapist</p>
+<p>I want to send an appointment booking link to my patient</p>
+<p>So that I can save myself time and give my patient more control and flexibility over their appointment.</p>
+
+<ul>
+<li>Admin setting to enable patient appointment booking links via SMS.</li>
+<li>button to the patient's page to trigger an appointment booking SMS.</li>
+<li>Confirmation dialog showing the message to be sent and patient's contact number.</li>
+<li>confirmation message to the user that a message was sent.</li>
+<li>Log on the patient's record that the message was sent.</li>
+<li>Customisable template for SMS wording.</li>
+</ul>
+
+<!--
+    Here is an example story.
+-->
+
+---
+
+<!-- _class: titlepage -->
+
+# Present Your Work
+
+# Please share your flowcharts and stories
 
 ---
 
