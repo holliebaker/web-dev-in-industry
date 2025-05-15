@@ -357,6 +357,7 @@ In groups, pairs or individually, plan out the Patient Portal.
 
 
 At the end of the session, please showcase your work!
+
 ---
 
 <div class="story">
@@ -381,7 +382,7 @@ At the end of the session, please showcase your work!
 
 ---
 
-<!-- _class: titlepage -->
+<!-- _class: titlepage invert -->
 
 # Present Your Work
 
