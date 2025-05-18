@@ -15,7 +15,7 @@ theme: bsu-computer-science
 
 # Learning Objectives
 
-- Gain an insight into what it's like to be a web developer in industr.
+- Gain an insight into what it's like to be a web developer in industry.
 
 - Learn about the software development lifecycle and explore some tools used by development teams to organise themselves.
 
@@ -32,21 +32,27 @@ theme: bsu-computer-science
 
 # Worknig at Mayden
 
-- 2 years: one placement, one as a graduate.
+- 2 years: placement and as a graduate.
 
-- Working on a web-based patient management system for psychological therapies used in the NHS.
+- Web-based patient management system for psychological therapies used in the NHS (and, bizarrely, Australia).
 
-- Worked as part of a team as a "full-stack" developer -- PHP, MySQL, HTML, JavaScript and CSS.
+- Part of a SCRUM team of "full-stack" developer -- PHP, MySQL, HTML, JavaScript and CSS.
 
-- Developers are also software engineers: desesigning, planning, testing and releasing software.
+- Also sooftware engineers: desesigning, planning, testing and releasing software.
 
-- Often developers are detectives: we have to figure out why something has broken or, worse, how some old code works.
+- Often have to be detectives: identifying and fixing errors, figuring out hat old code does.
 
 ![Mayden logo](./mayden.svg#logo)
 
 <!--
   Small-ish company. Meant developers could be involved in every part of the development process, excellent learning experience because you got to experience all aspects of the company which is not so easy in large firms.
   We were called Devs (developers) but we were really software engineers and sometimes detectives!
+
+  Talking points:
+  ISO27001 and information governance. Lots of process, always thoughtful of security and data protection.
+  Scrum BUT.
+  Technical planning, backlog gardening and estimations.
+  Technical working groups.
 -->
 
 ---

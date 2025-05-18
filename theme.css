@@ -106,9 +106,9 @@ background: var(--colour-bg);
 }
 
 section.postits {
-margin: 20px auto;
-        font-family: 'Lato';
-color:#fff;
+    margin: 20px auto;
+    font-family: 'Lato';
+    color:#fff;
 }
 
 section.postits *{
@@ -194,3 +194,18 @@ width: 35%;
 width: 10%;
 }
 
+section.bg-dark {
+    background-color: var(--colour-1);
+}
+
+section.image-gallery {
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+section.image-gallery > p {
+    display: block;
+    margin: 2rem;
+}
